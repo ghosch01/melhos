@@ -18,8 +18,8 @@ html
                         ul
                             li
                                 a#menu1(href='#aboutMe')  About
-                            li
-                                a#menu2(href='#projects')  Projects
+                            //li
+                            //    a#menu2(href='#projects')  Projects
                             li
                                 a#menu3(href='#skills')  Skills
                             li
@@ -59,21 +59,80 @@ html
                 div.content
                     h2.about_title About Me
                     div.text-zone-box-2
-                        p <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium ad at autem blanditiis ea eaque, ex harum hic inventore nam neque nesciunt obcaecati quasi quis ullam voluptas voluptatibus! Neque, repellendus.</span><span>Accusantium animi cum cupiditate enim est iure maiores molestias nisi optio perspiciatis, quis repellendus saepe tempora ut voluptatem. Beatae eaque facilis odio. Culpa cupiditate debitis ipsum perferendis quis reiciendis? Tempora.</span><span>Ad aperiam, asperiores aspernatur at blanditiis commodi deleniti dignissimos dolorem doloribus ex facere harum impedit incidunt ipsam iste libero obcaecati, perferendis porro possimus quam quidem sed, soluta tenetur veniam vero?</span><span>Aliquid animi consequuntur cumque delectus dolores, ea et eveniet facere harum hic illo inventore maiores maxime mollitia nihil pariatur, perferendis placeat provident quas qui repellat repellendus tempora tenetur voluptatem voluptates.</span><span>Adipisci consequatur consequuntur earum eligendi in inventore ipsam ipsum, magni minima necessitatibus nihil odio quae qui, quibusdam quidem quisquam ratione reprehenderit voluptate voluptatibus voluptatum! Atque est excepturi incidunt unde. Voluptates.</span>
-
-            section#projects
-                div.content
-                    h2 Projects
+                        p <span>I am passionate about collaborating and building interpersonal relationships to work towards objective goals. I create a space for innovative minds to share creative ideas while remaining determined, confident, and energized to execute a tangible plan from concept-to-product.</span><br><br>Before graduating, I committed to a path of consistent learning with a high aptitude for technology and business, having studied Computer Science and Business Operations at Aurora University and Illinois State University.<br><br>I acquired a strong foundation as a developer through academic achievement, and a sound consulting ability gained by professional experience relative to the essential values of customer service.<br><br>Next, is the pursuit for professional growth, making a positive impact and a real change. Furthermore, I look to create concrete solutions to real-world situations, taking what I've learned as a graduate and build upon as a Software Engineer.
+            //------------------------------------------ ADD PROJECTS HERE -----------------------------------------------------------
+            //section#projects
+            //    div.content
+            //        h2 Projects
+            //------------------------------------------------------------------------------------------------------------------------
             section#skills
                 div.content
                     h2 Skills
+                        span.amper  &
+                        span  Experience
+                    div.skills_container
+                        table
+                            thead
+                                tr
+                                    th HTML5/CSS3
+                                    th JavaScript
+                                    th SQL
+                            tbody
+                                tr
+                                    td
+                                        div.skill1
+                                            div.outer
+                                                div.inner
+                                                    div#number1 68%
+                                            svg(xmlns="http://www.w3.org/2000/svg" version="1.1" width="160px" height="160px")
+                                                defs
+                                                    linearGradient#GradientColor
+                                                        stop(offset="0%" stop-color="#e91e63")
+                                                        stop(offset="100%" stop-color="#673ab7")
+                                                circle.one(cx="80" cy="80" r="70" stroke-linecap="round")
+                                    td
+                                        div.skill2
+                                            div.outer
+                                                div.inner
+                                                    div#number2 70%
+                                            svg(xmlns="http://www.w3.org/2000/svg" version="1.1" width="160px" height="160px")
+                                                defs
+                                                    linearGradient#GradientColor
+                                                        stop(offset="0%" stop-color="#e91e63")
+                                                        stop(offset="100%" stop-color="#673ab7")
+                                                circle.two(cx="80" cy="80" r="70" stroke-linecap="round")
+                                    td
+                                        div.skill3
+                                            div.outer
+                                                div.inner
+                                                    div#number3 42%
+                                            svg(xmlns="http://www.w3.org/2000/svg" version="1.1" width="160px" height="160px")
+                                                defs
+                                                    linearGradient#GradientColor
+                                                        stop(offset="0%" stop-color="#e91e63")
+                                                        stop(offset="100%" stop-color="#673ab7")
+                                                circle.three(cx="80" cy="80" r="70" stroke-linecap="round")
             section#contact
                 div.content
-                    h2 Contact Me
+                    h2 Get In Touch
+                        circle(cx="80" cy="80" r="70" stroke-linecap="round")
+                    div.contact_box
+                        form.contact_form(action="contactform.php" method="post")
+                            div
+                                input(type="text" name="name" placeholder="John Doe")
+                            div
+                                input(type="text" name="email" placeholder="john@doe.com")
+                            div
+                                input(type="text" name="subject" placeholder="Hello There!")
+                            div
+                                textarea(name="message" placeholder="Message...")
+                            div
+                                button(type="submit" name="submit") SEND
         script(src='../js/functions.js')
         script(src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
             integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs="
             crossorigin="anonymous")
+
 
 
 

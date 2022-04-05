@@ -72,6 +72,40 @@ function un_toggle(){
     }
 }
 
+function percentage(){
+    let num1 = document.getElementById("number1");
+    let num2 =  document.getElementById("number2");
+    let num3 = document.getElementById("number3");
+    let ct1 = 0;
+    let ct2 = 0;
+    let ct3 = 0;
+
+    setInterval(()=>{
+        if ( ct1 == 65){
+            clearInterval();
+        }else{
+            ct1 += 1;
+            num1.innerHTML = ct1 + "%";
+        }
+    }, 28);
+
+    setInterval(()=>{
+        if ( ct2 == 70){
+            clearInterval();
+        }else{
+            ct2 += 1;
+            num2.innerHTML = ct2 + "%";
+        }
+    }, 26);
+    setInterval(()=>{
+        if ( ct3 == 42){
+            clearInterval();
+        }else{
+            ct3 += 1;
+            num3.innerHTML = ct3 + "%";
+        }
+    }, 41);
+}
 
 const sectionOne = document.querySelector('#homePage');
 
@@ -97,4 +131,5 @@ sectionOneObserver.observe(sectionOne);
 
 toggleBurger();
 un_toggle();
+percentage();
 // navSlide();
