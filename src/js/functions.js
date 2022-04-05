@@ -98,13 +98,13 @@ function percentage(){
         }
     }, 26);
     setInterval(()=>{
-        if ( ct3 == 42){
+        if ( ct3 == 60){
             clearInterval();
         }else{
             ct3 += 1;
             num3.innerHTML = ct3 + "%";
         }
-    }, 41);
+    }, 29);
 }
 
 const sectionOne = document.querySelector('#homePage');
